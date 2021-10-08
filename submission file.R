@@ -57,5 +57,17 @@ planned_spend
 predict.lm(fit, newdata = planned_spend)
 
 ## What Additional Data Would Improve Your Model
-# 
-
+# There are a number of additional variables that could improve the model. In terms of the tv_spend, it 
+# would be useful to know what level of the products target audience was reached according to tv ratings.
+# This could be broken down into what percentage would have seen the ad once, twice, three times,
+# four times or five or more times. 
+#
+# In terms of digital_spend variables like the click through rate to measure the percentage who clicked 
+# on the ad as well as tracking through what percentage of those clicks led to sales would allow us to
+# better understand the impact of the tv vs digital advertisements. A breakdown of spending on each 
+# social media or ad services would also be useful to see the impact of spending on different services.
+#
+# It would also be useful to know when new toy lines are being released as this could result in a
+# boosted sales level for the release month and well the subsequent months having variables similar to 
+# xmas telling the model if it has been 1, 2, or 3 months since a major release could indicate this to 
+# the model.
