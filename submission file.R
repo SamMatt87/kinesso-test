@@ -11,12 +11,13 @@ planned_spend
 ## Create A Plot of Sales, Tv And Digital Investment In The Y Axis With Time In The X Axis ####
 spend_and_sales <- data %>% select(2:4)
 color = rainbow(3)
-ts.plot(spend_and_sales,col=color, ylab='Sales and Investment', main = "Investment and sales over time")
+ts.plot(spend_and_sales,col=color, ylab='Sales and Investment ($)', 
+        xlab='Time (Months)', main = "Investment and sales over time")
 legend("topleft", legend = colnames(spend_and_sales), lty=1, col=color)
 abline(v=5)
+abline(v=12)
 abline(v=16)
 abline(v=20)
-abline(v=12)
 
 ## Report On The Correlations Among Sales Tv And Digital Investments ####
 # We can see from the graph that there is some positive correlation between 
